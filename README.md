@@ -20,15 +20,15 @@ O projeto tem como objetivo demonstrar habilidades de construção de uma aplica
 ## 📦 Como Rodar o Projeto
 
 1. Clone este repositório:
-     git clone https://github.com/GabzMatz/teste-front-end.git
-2.Navegue até o diretório do projeto:
-  cd PROJETO-ECONVESE
-3.Instale as dependências:
-  npm install
-4.Execute o projeto:
-  npm run dev
-5.Acesse no seu navegador:
-  http://localhost:3000
+        git clone https://github.com/GabzMatz/teste-front-end.git
+2. Navegue até o diretório do projeto:
+        cd teste-front-end
+3. Instale as dependências:
+        npm install
+4. Execute o projeto:
+        npm run dev
+5. Acesse no seu navegador:
+        http://localhost:3000
 
 ## ✨ Funcionalidades
 Interface interativa construída com React
