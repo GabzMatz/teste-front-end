@@ -1,81 +1,96 @@
-$color-gray:#9F9F9F;
-$color-blue-hardness:#3019B2;
+$color-gray: #9F9F9F;
+$color-blue-hardness: #3019B2;
 
-html{
+html {
     width: 100vw;
 }
 
-.ruller{
-    background-color: #F6F5F2;;
+.ruller {
+    background-color: #F6F5F2;
+    ;
     height: 1.5px;
     margin: 0 5vw;
     margin-bottom: 17px;
 }
 
-.features{
+.features {
     padding: 3px 10px;
     display: flex;
     justify-content: center;
     gap: 40px;
-}
-.features *{
-    gap: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.features{
+
     color: $color-gray;
+
+    p {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            color: $color-blue-hardness;
+            font-weight: 500;
+        }
+    }
 }
-.features p span{
-    color:$color-blue-hardness;
-    font-weight: 500;
-}
-p{
-    font-family: "Poppins";
-}
-nav{
+
+nav {
     margin: 0 5vw;
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
+
+    form {
+        display: flex;
+
+        * {
+            border-color: transparent;
+            background-color: #F6F5F2;
+        }
+
+        input {
+            padding-left: 15px;
+            border-radius: 8px 0 0 8px;
+            width: 500px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &:focus-within {
+            border: 1px solid #d3d0c8;
+            border-radius: 8px;
+        }
+    }
+
+    button {
+        border-radius: 0 8px 8px 0;
+        width: 28px;
+        padding-right: 40px;
+        cursor: pointer;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    .orherButtons {
+        display: flex;
+        gap: 14px;
+
+        * {
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+        }
+    }
 }
 
-nav form{
-    display: flex;
-}
-nav form * {
-    border-color:transparent;
-    background-color: #F6F5F2;
-    font-family: "Poppins";
-}
-nav form input{
-    padding-left: 15px;
-    border-radius: 8px 0 0 8px;
-    width: 500px;
-}
-nav form button{
-    border-radius: 0 8px 8px 0;
-    width: 28px; 
-    padding-right: 40px;
-    cursor: pointer;
-}
-nav img{
-    cursor: pointer;
-}
-.orherButtons{
-    display: flex;
-    gap: 14px;
-}
-.orherButtons * {
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-}
-.categorys{
+.categorys {
     box-shadow: 0px 8px 16px 0px #3930131F;
     cursor: pointer;
-    border: 1px solid #F6F5F2;;
+    border: 1px solid #F6F5F2;
     padding: 9px 60px;
     margin: 0 5vw;
     display: flex;
@@ -85,15 +100,14 @@ nav img{
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
-    
-        .signature{
-            display: flex;
-            gap:8px;
-        }
-    
 
-    p:hover{
+    .signature {
+        display: flex;
+        gap: 8px;
+    }
+
+    p:hover {
         transition: 0.5s;
-        color:$color-blue-hardness;
+        color: $color-blue-hardness;
     }
 }

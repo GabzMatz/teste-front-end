@@ -1,4 +1,4 @@
-.banner{
+.banner {
     position: relative;
     background-image: url("../../assets/banner/banner.png");
     background-repeat: no-repeat;
@@ -6,33 +6,36 @@
     background-size: cover;
     width: 100vw;
     height: 350px;
-    .container{
+
+    .container {
         z-index: 2;
         position: absolute;
         color: white;
         display: flex;
         flex-direction: column;
         margin: 0 5vw;
-        max-width:  600px;
+        max-width: 600px;
         font-family: "Poppins";
 
-        h2{
+        h2 {
             font-size: 38px;
             letter-spacing: 1.5px;
             line-height: 33px;
             padding-top: 90px;
-       }
+        }
+
         p {
             font-size: 28px;
             margin-top: 30px;
             font-weight: lighter;
-            span{
+
+            span {
                 color: #F7CA11;
                 font-weight: 700;
             }
         }
 
-        button{
+        button {
             margin-top: 35px;
             border: none;
             border-radius: 5px;
@@ -43,10 +46,11 @@
             cursor: pointer;
         }
     }
-    .fade{
+
+    .fade {
         height: 350px;
-        background: rgb(0,0,0);
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 75%);        
+        background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 75%);
     }
 
 }

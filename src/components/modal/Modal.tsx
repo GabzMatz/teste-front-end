@@ -1,14 +1,15 @@
+import { ProductInterface } from "../../types/ProductInterface";
 import "./Modal.scss"
 import { useState } from "react";
 
 interface ModalProps{
-    isOpen:boolean;
+    isOpen: boolean;
     onClose: () => void;
-    obj:object;
+    obj: ProductInterface | null;
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, obj }) => {
-    if (!isOpen) return null;
+    if (!isOpen || !obj) return null;
     
     const [getItem, setItem] = useState(0);
 
@@ -36,7 +37,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, obj }) => {
                         <div className="close">
                             <p>X</p>
                         </div>
-                        <h3>{obj.name}</h3>
+                        <h3>{obj.productName}</h3>
                         <h2>R$ {obj.price},00</h2>
                         <p>Many desktop publishing packages and web page editors now many desktop publishing</p>
                         <span>Veja mais detalhes do produto &gt;</span>

@@ -27,7 +27,7 @@ const Navbar = ()=>{
                 <input type="text" placeholder="O que você está buscando?" />
                 <button type="submit"><img src={navSearch} alt="" /></button>
             </form>
-            <div className="orherButtons"> 
+            <div className="user-buttons"> 
                 <img src={box} alt="" />
                 <img src={heart} alt="" />
                 <img src={user} alt="" />
@@ -44,7 +44,6 @@ const Navbar = ()=>{
              <p className="signature"><img src={crowSimple} alt=""/>assinaturas</p>
         </section>
         </>
-
    )
 
 

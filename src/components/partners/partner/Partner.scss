@@ -1,15 +1,17 @@
-.partner{
+.partner {
     position: relative;
     height: 350px;
     width: 634px;
-    img{
+
+    img {
         z-index: 1;
         border-radius: 20px;
         position: absolute;
         height: 100%;
         width: 100%;
     }
-    .fade{
+
+    .fade {
         z-index: 2;
         border-radius: 20px;
         position: absolute;
@@ -17,7 +19,8 @@
         width: 100%;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 99%);
     }
-    main{
+
+    main {
         z-index: 3;
         height: 100%;
         position: absolute;
@@ -27,17 +30,18 @@
         max-width: 200px;
         font-family: "Poppins";
         color: #FFFFFF;
-        
 
-        h3{
+
+        h3 {
             font-size: 40px;
         }
 
-        p{
+        p {
             font-weight: 100;
             font-size: 15px;
         }
-        button{
+
+        button {
             cursor: pointer;
             margin-top: 30px;
             font-family: "Poppins";

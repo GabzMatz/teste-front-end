@@ -1,25 +1,27 @@
-.footer{
+.footer {
     width: 100vw;
-    height:190px;
+    height: 190px;
     background-color: #271C47;
-    main{
+
+    main {
         display: flex;
         justify-content: space-around;
-        height:100%;
-        .newsletter{
+        height: 100%;
+
+        .newsletter {
             display: flex;
             flex-direction: column;
             justify-content: center;
             color: white;
 
-            h3{
+            h3 {
                 margin-top: 10px;
-                font-family:"Outfit";
+                font-family: "Outfit";
                 font-weight: 600;
                 font-size: 32px;
             }
 
-            p{
+            p {
                 margin-top: 7px;
                 width: 520px;
                 font-weight: 100;
@@ -27,29 +29,31 @@
 
             }
         }
-        .buttons{
+
+        .buttons {
             justify-content: center;
             display: flex;
             flex-direction: column;
 
-            form{
+            form {
                 display: flex;
                 gap: 9px;
 
-                input{
+                input {
                     padding: 0 20px 0 25px;
                     background-color: white;
                     border-radius: 8px;
-                    border:1px solid #E7E7E7;
+                    border: 1px solid #E7E7E7;
                     font-family: "Poppins";
 
                 }
-                button{
+
+                button {
                     padding: 14px 36px;
                     background-color: #F7CA11;
                     text-transform: uppercase;
-                    border:none;
-                    color:#161615;
+                    border: none;
+                    color: #161615;
                     border-radius: 8px;
                     font-family: "Poppins";
                     font-weight: 600;
@@ -58,12 +62,12 @@
 
             }
 
-            .checkbox-item{
+            .checkbox-item {
                 margin-top: 8px;
                 display: flex;
                 flex-direction: row;
 
-                p{
+                p {
                     font-size: 12px;
                     margin-left: 5px;
                     color: white;
@@ -73,79 +77,89 @@
 
         }
     }
-    .morespecs{
-        background-color:#F4F4F4;
+
+    .morespecs {
+        background-color: #F4F4F4;
         height: 290px;
         padding: 70px 5vw;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        .left{
+
+        .left {
             display: flex;
             flex-direction: column;
             gap: 22px;
-                    background-color:#F4F4F4;        ;
+            background-color: #F4F4F4;
+            ;
 
-            img{
+            img {
                 width: 164px;
             }
-            p{
+
+            p {
                 margin-top: -8px;
                 font-size: 14px;
                 color: #3F3F40;
                 font-weight: 300;
                 width: 300px;
             }
-            .icons-social{
+
+            .icons-social {
                 display: flex;
                 justify-content: cen;
                 align-items: center;
                 gap: 10px;
-                *{
+
+                * {
                     cursor: pointer;
-                    width:25px;
+                    width: 25px;
                 }
             }
 
         }
-        .ruller{
+
+        .ruller {
             width: 1px;
-            height:200px ;
+            height: 200px;
             margin-top: -20px;
             background-color: #2828282E;
 
         }
-        .right{
+
+        .right {
             display: flex;
             gap: 100px;
 
-            .otherHelps{
+            .otherHelps {
                 color: #222222B5;
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
 
-                h4{
+                h4 {
                     font-family: "Poppins";
                     font-weight: 900;
                     font-size: 16px;
                     margin-bottom: 7px;
                 }
-                p{
+
+                p {
                     font-weight: 400;
                     font-size: 14px;
                 }
             }
         }
     }
-    .loremIpsum{
+
+    .loremIpsum {
         font-size: 12px;
         color: #3F3F40;
         width: 100%;
         display: flex;
         justify-content: center;
         font-weight: 100;
-        padding:12px 0 ;
+        padding: 12px 0;
     }
 
 }

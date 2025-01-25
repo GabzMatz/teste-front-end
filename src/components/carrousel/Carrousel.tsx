@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./Carrousel.scss";
 import arrowRight from "../../assets/caroseul/arrow.svg";
 import arrowLeft from "../../assets/caroseul/arrow-left.svg";
+import { ProductInterface } from "../../types/ProductInterface";
 
 interface CarrouselProps {
   nav: boolean;
@@ -14,7 +15,7 @@ const Carrousel: React.FC<CarrouselProps> = ({ nav }) => {
   const [getIndex, setIndex] = useState(0);
   const ITEMS_VISIBLE = 4;
   const [getModalOpen, setIsModalOpen] = useState(false);
-  const [getModelDescription, setModelDescription] = useState<{ price: string; name: string, photo:string } | null>(null);
+  const [getModelDescription, setModelDescription] = useState<ProductInterface | null>(null);
   useEffect(() => {
     const fetchItems = async () => {
       setLoading(true);
@@ -43,9 +44,9 @@ const Carrousel: React.FC<CarrouselProps> = ({ nav }) => {
     }
   };
 
-  const openModal = (price:string, name:string, photo:string) =>{
+  const openModal = (product: ProductInterface) =>{
     setIsModalOpen(true);
-    setModelDescription({ price, name, photo });
+    setModelDescription(product);
   }
     
   const closeModal = () => setIsModalOpen(false);
@@ -89,15 +90,15 @@ const Carrousel: React.FC<CarrouselProps> = ({ nav }) => {
         <ul id="position">
           {getProducts
             .slice(getIndex, getIndex + ITEMS_VISIBLE)
-            .map((produto, index) => (
+            .map((product: ProductInterface, index) => (
               <li className="item" key={getIndex + index}>
-                <img src={produto.photo} alt={produto.productName} />
-                <p className="productName">{produto.productName}</p>
-                <p className="otherPrice">R$ {(produto.price * 1.17).toLocaleString("pt-BR")},00</p>
-                <p className="price">R$ {produto.price.toLocaleString("pt-BR")},00</p>
-                <p className="parcel">ou 2x de R$ {(produto.price / 2).toLocaleString("pt-BR")},00 sem juros </p>
+                <img src={product.photo} alt={product.productName} />
+                <p className="productName">{product.productName}</p>
+                <p className="otherPrice">R$ {(product.price * 1.17).toLocaleString("pt-BR")},00</p>
+                <p className="price">R$ {product.price.toLocaleString("pt-BR")},00</p>
+                <p className="parcel">ou 2x de R$ {(product.price / 2).toLocaleString("pt-BR")},00 sem juros </p>
                 <p className="free">Frete grátis</p>
-                <button className="button-buy" onClick={() => openModal( produto.price.toLocaleString("pt-BR"), produto.productName, produto.photo)}>comprar</button>
+                <button className="button-buy" onClick={() => openModal(product)}>comprar</button>
               </li>
             ))}
         </ul>
@@ -111,4 +112,4 @@ const Carrousel: React.FC<CarrouselProps> = ({ nav }) => {
   );
 };
 
-export default Carrousel;
+export default Carrousel; 
