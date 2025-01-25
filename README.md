@@ -31,8 +31,8 @@ O projeto tem como objetivo demonstrar habilidades de construção de uma aplica
         http://localhost:3000
 
 ## ✨ Funcionalidades
-Interface interativa construída com React
-Design responsivo e moderno
+1. Interface interativa construída com React
+2. Design responsivo e moderno
 
 ## 💎 Objetivos
 1. Uso de HTML semântico
