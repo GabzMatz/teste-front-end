@@ -1,9 +1,3 @@
-
-Aqui está uma sugestão de um README.md bem organizado e bonito para o seu projeto de teste da Econvese:
-
-markdown
-Copiar
-Editar
 # Projeto Teste Econvese
 
 Bem-vindo ao repositório do projeto teste da **Econvese**! 🎉
