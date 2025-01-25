@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aqui está uma sugestão de um README.md bem organizado e bonito para o seu projeto de teste da Econvese:
 
-Currently, two official plugins are available:
+markdown
+Copiar
+Editar
+# Projeto Teste Econvese
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bem-vindo ao repositório do projeto teste da **Econvese**! 🎉
 
-## Expanding the ESLint configuration
+Este é um projeto desenvolvido para avaliar habilidades em **React** e demonstração de práticas de desenvolvimento front-end modernas. 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React** - Biblioteca JavaScript para construção de interfaces de usuário.
+- **Vite** - Ferramenta de build rápida e moderna para o React.
+- **SCSS** - Estilização da interface.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🧩 Objetivo
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+O projeto tem como objetivo demonstrar habilidades de construção de uma aplicação React com foco em:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Componentização
+- Consumo de APIs 
+  
+## 📦 Como Rodar o Projeto
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone este repositório:
+     git clone https://github.com/GabzMatz/teste-front-end.git
+2.Navegue até o diretório do projeto:
+  cd PROJETO-ECONVESE
+3.Instale as dependências:
+  npm install
+4.Execute o projeto:
+  npm run dev
+5.Acesse no seu navegador:
+  http://localhost:3000
+
+## ✨ Funcionalidades
+Interface interativa construída com React
+Design responsivo e moderno
+
+Feito por Gabriel
