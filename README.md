@@ -34,4 +34,9 @@ O projeto tem como objetivo demonstrar habilidades de construção de uma aplica
 Interface interativa construída com React
 Design responsivo e moderno
 
+## 💎 Objetivos
+1. Uso de HTML semântico
+2. Organização do projeto
+3. Lógica do código
+
 Feito por Gabriel
