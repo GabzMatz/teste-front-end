@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http://GabzMatz.github.io/teste-front-end",
   "scripts": {
-    "homepage": "http://GabzMatz.github.io/teste-front-end",
-    "dev": "gabriel",
+    "dev": "vite",
     "build": "tsc -b && vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
