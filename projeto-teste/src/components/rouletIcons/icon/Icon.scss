@@ -1,0 +1,35 @@
+.icon-roulet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    
+    img{
+        cursor: pointer;
+        background-color: #F4F4F4;
+        box-shadow: 0px 2px 9px 0px #00000038;
+        border-radius: 10px;
+        width: 128px;
+        padding: 30px;
+    }
+    p{
+        cursor: pointer;
+        font-size: 13.5px;
+        margin-top: 20px;
+        color: #4E4E4E;
+    }
+
+}
+.icon-roulet:hover{
+    img{
+        transition: 0.1s;
+        background-color: #FFFFFF;
+        filter: invert(17%) sepia(73%) saturate(400%) hue-rotate(240deg) brightness(125%) contrast(110%);
+    }
+    p{
+        transition: 0.5s;
+        font-weight: 900;
+        color: #3019B2;
+    }
+}

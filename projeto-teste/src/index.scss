@@ -1,0 +1,31 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.defaultLayout{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
+}   
+#root{
+    width: 100vw;
+    height: 100vh;
+}
+ul{
+    list-style: none;
+}
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+  
+html ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #271c47d5;
+}
+  
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}

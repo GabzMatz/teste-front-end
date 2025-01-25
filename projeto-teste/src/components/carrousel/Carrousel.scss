@@ -1,0 +1,142 @@
+.fullCarrousel{
+    width: 100vw;
+        .header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                .header-display{
+                    display: flex;
+                    width: 100vw;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 5px;
+                        h1{
+                            font-family: "Poppins";
+                            font-size: 30px;
+                            color: #3442B5;
+                            text-align: center;
+                        }
+                        .ruller{
+                            margin-top: 10px;
+                            width: 900px;
+                            max-width: 20vw;
+                            height: 1px;
+                            background-color: #DEDEDE;
+                        }
+                    }
+                .seeAll{
+                    font-family: "Poppins";
+                    font-size: 15px;
+                    color: #3F3F40;
+                    font-weight: 700;
+                }
+                .nav-header{
+                    width: 90vw;
+
+                        *{
+                            font-family: "Poppins";   
+                            font-weight: 400;
+                            font-size: 16px;
+                            width: 15vw;
+                            color:#3B3B3B;
+                            border: 1px solid #BDBDBD;
+                            text-transform: uppercase;
+                            padding: 7px 0;
+                            background-color: white;
+                            cursor: pointer;
+                        }
+                        *:hover{
+                            transition: 0.2s;
+                            color: #3442B5;
+                            font-weight: 700;
+                        }
+                }
+
+        }
+        #roulet{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 70px;
+                .loading{
+                    font-family: 'Poppins';
+                    font-size: 60px;
+                    color: #555;
+                    text-transform: uppercase;
+                }
+                #position{
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                    width: 90vw;
+                    gap: 20px;
+                        .item{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            padding: 26px 26px 0px 26px;
+                            box-shadow: 0px 7px 20px 0px #00000021;
+                            border-radius: 10px ;
+                            width: 304px;
+                            height: 500px;
+                                .productName{
+                                    text-transform: lowercase;
+                                    font-size: 15px;  
+                                    color:#3F3F40;           
+                                    font-weight: 300;
+                                }
+                                .productName:first-letter{ 
+                                    text-transform: capitalize;
+                                }
+                                .otherPrice{
+                                    text-decoration: line-through;
+                                    font-weight: 300;
+                                    font-size: 14px;  
+                                    color: #808080;
+                            
+                                }
+                                .price{
+                                    font-family: 'Poppins';
+                                    text-transform: uppercase;
+                                    font-size: 20px;  
+                                    color:#3F3F40;           
+                                    font-weight: 900; 
+                                }
+                                .parcel{
+                                    font-size: 12px;  
+                                    font-weight: 300;
+                                }
+                                .free{
+                                    font-size: 12px;  
+                                    color: #3442B5;
+                                }
+                                .button-buy{
+                                    cursor: pointer;
+                                    margin-top: 30px;
+                                    font-family: 'Poppins';
+                                    text-transform: uppercase;
+                                    height: 44px;
+                                    background-color: #3442B5;
+                                    border:none;
+                                    border-radius: 4px;
+                                    color: white;
+                                }
+                        }
+                }
+        }
+
+        .buttons{
+            cursor: pointer;
+        }
+        .right{
+            margin-left: 15px
+        }  
+        .carrousel-items .hidden {
+            display: none;
+        }  
+
+        .carrousel-items .active {
+            display: block;
+        }
+        
+}

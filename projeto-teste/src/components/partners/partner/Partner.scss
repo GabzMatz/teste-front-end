@@ -1,0 +1,54 @@
+.partner{
+    position: relative;
+    height: 350px;
+    width: 634px;
+    img{
+        z-index: 1;
+        border-radius: 20px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    .fade{
+        z-index: 2;
+        border-radius: 20px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 99%);
+    }
+    main{
+        z-index: 3;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        margin: 100px 40px 0 40px;
+        flex-direction: column;
+        max-width: 200px;
+        font-family: "Poppins";
+        color: #FFFFFF;
+        
+
+        h3{
+            font-size: 40px;
+        }
+
+        p{
+            font-weight: 100;
+            font-size: 15px;
+        }
+        button{
+            cursor: pointer;
+            margin-top: 30px;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            width: 144px;
+            background-color: #F7CA11;
+            padding: 12px 8px;
+            border: none;
+            border-radius: 6px;
+        }
+    }
+}
